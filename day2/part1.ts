@@ -2,9 +2,9 @@ import { getInputAsList } from '../utils/filereader'
 
 const getGameScore = (game: string): number => {
   if (
-    Math.max(...(game.match(/\d+(?= red)/g) || []).map(Number)) > 12 ||
-    Math.max(...(game.match(/\d+(?= green)/g) || []).map(Number)) > 13 ||
-    Math.max(...(game.match(/\d+(?= blue)/g) || []).map(Number)) > 14
+    Math.max(...game.match(/\d+(?= red)/g)!.map(Number)) > 12 ||
+    Math.max(...game.match(/\d+(?= green)/g)!.map(Number)) > 13 ||
+    Math.max(...game.match(/\d+(?= blue)/g)!.map(Number)) > 14
   )
     return 0
 
