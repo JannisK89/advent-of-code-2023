@@ -7,7 +7,6 @@ const getGameScore = (game: string): number => {
     Math.max(...game.match(/\d+(?= blue)/g)!.map(Number)) > 14
   )
     return 0
-
   return parseInt(game.match(/Game \d+/)![0].slice(4))
 }
 
