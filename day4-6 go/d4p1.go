@@ -14,7 +14,6 @@ func d4p1() {
 		lineTotal := 0
 		_, allNumbs, _ := strings.Cut(line, ":")
 		winNumbs, myNumbs, _ := strings.Cut(allNumbs, "|")
-
 		winNumbsSlice := strings.Split(strings.TrimSpace(winNumbs), " ")
 		myNumbSlice := strings.Split(strings.TrimSpace(myNumbs), " ")
 
